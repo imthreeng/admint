@@ -1,0 +1,9 @@
+---
+description: 화면 ui는 flowbite와 tailwind를 사용합니다.
+globs: 
+---
+
+# 화면 UI
+
+## 기본적으로 flowbite를 이용한다.
+
