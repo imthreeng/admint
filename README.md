@@ -46,5 +46,69 @@ curl https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.turbo.min.js > ve
 - application.js 에 javascript 설정
 
 ```js
-import "flowbite";
+import 'flowbite'
+```
+
+## ruby on rails vscode 확장 프로그램
+
+### VS Code 필수 확장 프로그램
+
+```json
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "eamodio.gitlens",
+    "Shopify.ruby-lsp",
+    "rebornix.ruby",
+    "aliariff.vscode-erb-beautify"
+  ]
+}
+```
+
+- aliariff.vscode-erb-beautify 설치
+
+```console
+bin/bundle add htmlbeautifier
+bin/bundle install
+```
+
+### VS Code 설정
+
+```json
+{
+  "tailwindCSS.includeLanguages": {
+    "erb": "html",
+    "ruby": "html"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+    "editor.formatOnSave": true
+  },
+  "vscode-erb-beautify.customEnvVar": {
+    "LC_ALL": "ko_KR.UTF-8"
+  },
+  "ruby.useBundler": true, //run non-lint commands with bundle exec
+  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true // enable rubocop via bundler
+    },
+    "reek": {
+      "useBundler": true // enable reek via bundler
+    }
+  },
+  "ruby.format": "rubocop", // use rubocop for formatting
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.html.erb": "erb"
+  }
+}
 ```
