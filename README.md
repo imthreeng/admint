@@ -37,6 +37,12 @@ curl https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css > vendor/
 curl https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.turbo.min.js > vendor/javascript/flowbite.turbo.min.js
 ```
 
+- importmap.rb 추가
+
+```ruby
+pin "flowbite", to: "flowbite.turbo.min.js"
+```
+
 - application.html.erb에 css 설정
 
 ```html
@@ -46,7 +52,7 @@ curl https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.turbo.min.js > ve
 - application.js 에 javascript 설정
 
 ```js
-import 'flowbite'
+import "flowbite"
 ```
 
 ## ruby on rails vscode 확장 프로그램
