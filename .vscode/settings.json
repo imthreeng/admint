@@ -1,0 +1,66 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "erb": "html",
+    "ruby": "html"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+    "editor.formatOnSave": true
+  },
+  "vscode-erb-beautify.customEnvVar": {
+    "LC_ALL": "ko_KR.UTF-8"
+  },
+  "ruby.useBundler": true, //run non-lint commands with bundle exec
+  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true // enable rubocop via bundler
+    },
+    "reek": {
+      "useBundler": true // enable reek via bundler
+    }
+  },
+  "ruby.format": "rubocop", // use rubocop for formatting
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.html.erb": "erb"
+  }
+}
+
+/* {
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "ruby.intellisense": "rubyLocate",
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+    "editor.formatOnSave": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "erb": "html",
+    "ruby": "html"
+  },
+  "files.associations": {
+    "*.html.erb": "erb",
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
+} */
