@@ -24,7 +24,7 @@
   },
   "ruby.format": "rubocop", // use rubocop for formatting
   "prettier.semi": false,
-  "prettier.singleQuote": true,
+  "prettier.singleQuote": false,
   "files.associations": {
     "*.css": "tailwindcss",
     "*.html.erb": "erb"
