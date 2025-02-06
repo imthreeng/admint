@@ -12,9 +12,6 @@
     "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
     "editor.formatOnSave": true
   },
-  "vscode-erb-beautify.customEnvVar": {
-    "LC_ALL": "ko_KR.UTF-8"
-  },
   "ruby.useBundler": true, //run non-lint commands with bundle exec
   "ruby.useLanguageServer": true, // use the internal language server (see below)
   "ruby.lint": {
